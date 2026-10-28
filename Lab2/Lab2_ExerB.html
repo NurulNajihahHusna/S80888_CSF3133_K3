@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Course Feedback</title>
+</head>
+
+<!--
+Errors and correction:
+1. Line 12-13: The navigation menu is missing a link to the Student Comments section.
+2. Line 15: The main content is not wrapped inside a <main> element.
+3. Line 27: The table row uses colspan="3" for "Tables and Forms" instead of providing separate Week, Topic, and Rating values for Week 2.
+4. Line 38: The table is missing rows for Week 4 and Week 5.
+5. Line 38: The table is missing the rowspan="2" attribute for the shared "Mini Project" topic.
+6. Line 38: The table is missing a final "Average Rating" row with colspan="2".
+7. Line 40: The Name input does not have the required attribute if the field must be completed.
+8. Line 43: The "Overall rating" label is not associated with a specific form control. A fieldset and legend can be used to group the rating options.
+9. Line 44-47: The rating section has only two radio button options, Good and Poor. The Average option is missing.
+10. Line 49-50: The form has only one checkbox. At least three checkboxes are required for topics that students want more practice on.
+11. The form is missing a dropdown list for Section/Group with at least three options.
+12. The page is missing a "Student Comments" section containing two article elements, each with a student name and comment.
+13. The HTML code is missing comments explaining the new sections added to the page.
+-->
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>CSF3133 Course Feedback</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#results">Results</a> |
+        <a href="#form">Feedback Form</a>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+
+        <!-- Section 1: Course summary table -->
+        <section id="results">
+            <h2>Course Summary</h2>
+
+            <table border="1">
+                <tr>
+                    <th>Week</th>
+                    <th>Topic</th>
+                    <th>Rating</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>Introduction to HTML</td>
+                    <td>4.5/5</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Tables and Forms</td>
+                    <td>4.0/5</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Semantic HTML</td>
+                    <td>4.0/5</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Section 2: Student feedback form -->
+        <section id="form">
+            <h2>Give Your Feedback</h2>
+
+            <form action="submit_feedback.html" method="post">
+
+                <!-- Name input -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <br><br>
+
+                <!-- Rating options -->
+                <label>Overall Rating:</label>
+                <br>
+
+                <input type="radio" id="good"
+                       name="rating" value="Good">
+                <label for="good">Good</label>
+
+                <input type="radio" id="poor"
+                       name="rating" value="Poor">
+                <label for="poor">Poor</label>
+
+                <br><br>
+
+                <!-- Submit button -->
+                <input type="submit" value="Submit Feedback">
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright &copy; 2026 CSF3133</p>
+    </footer>
+
+</body>
+</html>

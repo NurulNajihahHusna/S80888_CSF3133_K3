@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="
+	width=device-width, initial-scale=1.0">
+	<title>Profile Page</title>
+</head>
+<body>
+
+    <!-- Header -->
+	<header>
+		<h1>TECH INNOVATION DAY</h1>
+		<P>Discover Your Ideas to Inspire Innovation!</P>
+	</header>
+
+    <!-- Navigation -->
+	<nav>
+        <a href="#about">About</a> |
+        <a href="#schedule">Event Schedule</a> |
+        <a href="#register">Registration</a>
+    </nav>
+
+	<main>
+
+        <!-- Section -->
+        <section id="about">
+            <h2>About the Event</h2>
+            <p>
+                Tech Innovation Day is an event where students can
+                explore new technologies, learn new skills and share ideas.
+            </p>
+
+            <article>
+                <h3>Speaker: Dr. Ily</h3>
+                <p>
+                    Dr. Ily will share insights about artificial
+                    intelligence and the future of technology.
+                </p>
+            </article>
+
+            <article>
+                <h3>Activity: Coding Challenge</h3>
+                <p>
+                    Participants will solve programming problems
+                    and develop their problem-solving skills.
+                </p>
+            </article>
+        </section>
+
+		<section id="schedule">
+            <h2>Event Schedule</h2>
+            <ul>
+                <li>8:00 AM - Registration</li>
+                <li>9:00 AM - Opening Ceremony</li>
+                <li>10:00 AM - Guest Speaker</li>
+                <li>11:00 AM - Coding Challenge</li>
+				<li>12:00 PM - Lunch Break</li>
+                <li>1:00 PM - Closing Ceremony</li>
+            </ul>
+        </section>
+
+
+        <section id="register">
+            <h2>Registration</h2>
+            <p>Join us for an exciting day of learning and innovation!</p>
+            <p>Email: techinnovation@example.com</p>
+            <p>Registration Fee: Free</p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+	<footer>
+		<p>&copy; 2026 TECH INNOVATION DAY</p>
+	</footer>
+
+
+    <!-- Table -->
+	<table border="1">
+		<tr>
+			<th>Time</th>
+			<th>Activity</th>
+			<th>Venue</th>
+			<th>Person in Charge</th>
+		</tr>
+		<tr>
+			<td>8:00 AM</td>
+			<td>Registration</td>
+			<td>Main Hall</td>
+			<td>NurNazurah</td>
+		</tr>
+		<tr>
+			<td>9:00 AM</td>
+			<td>Opening Ceremony</td>
+			<td rowspan="2">Main Hall</td>
+			<td>Najihah Husna</td>
+		</tr>
+		<tr>
+			<td>10:00 AM</td>
+			<td>Guest Speaker</td>
+			<td>Dr. Ily</td>
+		</tr>
+		<tr>
+			<td>11:00 AM</td>
+			<td>Coding Challenge</td>
+			<td>Computer Lab</td>
+			<td>John Doe</td>
+		</tr>
+		<tr>
+            <td>12:00 PM</td>
+            <td colspan="3">Lunch Break</td>
+        </tr>
+		<tr>
+			<td>1:00 PM</td>
+			<td>Closing Ceremony</td>
+			<td>Main Hall</td>
+			<td>Jane Smith</td>
+		</tr>
+	</table>
+
+        <!-- Registration form -->
+		<h2>Registration Form</h2>
+		<form action="register.html" method="post">
+			<label for="name">Full Name:</label><br>
+			<input type="text" id="name" name="name" required><br><br>
+
+			<label for="MatricID">Matric Number:</label><br>
+			<input type="text" id="MatricID" name="MatricID" required><br><br>
+
+			<label for="Email">Email:</label><br>
+			<input type="email" id="Email" name="Email" required><br><br>
+
+			<p>Year of Study</p>
+			<input type="radio" id="Year1" name="Year" value="Year 1">
+			<label for="Year1">Year 1</label><br>
+			<input type="radio" id="Year2" name="Year" value="Year 2">
+			<label for="Year2">Year 2</label><br>
+			<input type="radio" id="Year3" name="Year" value="Year 3">
+			<label for="Year3">Year 3</label><br>
+			<input type="radio" id="Year4" name="Year" value="Year 4">
+			<label for="Year4">Year 4</label><br><br>
+
+			<p>Sessions</p>
+			<input type="checkbox" id="Coding" name="Session" value="Coding Challenge">
+			<label for="Coding">Coding Challenge</label><br>
+			<input type="checkbox" id="Robotics" name="Session" value="Robotics Workshop">
+			<label for="Robotics">Robotics Workshop</label><br>
+			<input type="checkbox" id="Drone" name="Session" value="Drone Demonstration">
+			<label for="Drone">Drone Demonstration</label><br>
+
+			<select id="programme" name="programme" required>
+            <option value="">-- Select Programme --</option>
+            <option value="Data Analytics">Data Analytics</option>
+            <option value="Software Engineering">Software Engineering</option>
+            <option value="Maritime Informatics">Maritime Informatics</option>
+            <option value="Information Technology">Information Technology</option>
+        </select>
+        <br><br>
+
+			<input type="submit" value="Submit">
+		</form>
+
+</body>
+</html>
