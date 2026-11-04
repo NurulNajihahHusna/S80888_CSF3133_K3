@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Exercise 3 - Interactive Contact Form</title>
+</head>
+<body>
+
+    <!-- 1. Page Structure & Block/Inline -->
+    <div>
+        <h1>Welcome to My Interactive Page</h1>
+        <span>Your satisfaction is our priority &mdash; reach out anytime!</span>
+    </div>
+
+    <hr>
+
+    <!-- 2. Contact Form -->
+    <div>
+        <h2>Contact Form</h2>
+        <form action="#" method="post">
+            <!-- Input Email -->
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required placeholder="example@domain.com"><br><br>
+
+            <!-- Input Date -->
+            <label for="contact-date">Preferred Contact Date:</label><br>
+            <input type="date" id="contact-date" name="contact-date" required><br><br>
+
+            <!-- Input Range Slider -->
+            <label for="satisfaction">Satisfaction Level (1-10):</label><br>
+            <input type="range" id="satisfaction" name="satisfaction" min="1" max="10" value="5"><br><br>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Form</button>
+        </form>
+    </div>
+
+    <hr>
+
+    <!-- 3. Inline Calculator -->
+    <div>
+        <h2>Inline Calculator</h2>
+        <!-- Penggunaan event oninput untuk mengira jumlah secara dinamik -->
+        <form oninput="result.value = parseInt(num1.value || 0) + parseInt(num2.value || 0)">
+            <label for="num1">First Number:</label>
+            <input type="number" id="num1" name="num1" value="0">
+            
+            <span>+</span>
+            
+            <label for="num2">Second Number:</label>
+            <input type="number" id="num2" name="num2" value="0">
+            
+            <span>=</span>
+            
+            <!-- Elemen <output> untuk memaparkan hasil tambah -->
+            <output name="result" for="num1 num2">0</output>
+        </form>
+    </div>
+
+    <hr>
+
+    <!-- 4. FOOTER SECTION -->
+    <div>
+        <p>Contact us at: support&commat;example.com</p>
+        <p>&copy; 2026 Interactive Web Form. All rights reserved.</p>
+    </div>
+
+</body>
+</html>

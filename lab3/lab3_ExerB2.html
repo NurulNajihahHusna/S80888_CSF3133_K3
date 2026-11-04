@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Ticket Booking</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div id="header">
+        <h1>e-Ticket <span>Your Campus Cinema</span></h1>
+    </div>
+
+    <!-- Main Content Section -->
+    <div id="content">
+        <h2>Book Your Ticket</h2>
+        <p>Promotion: tickets &lt; RM10 for students &amp; staff!</p>
+        
+        <!-- Form with dynamic calculation for total tickets and total price (Part 2: Adult RM12, Child RM8) -->
+        <form action="booking.php" method="post" oninput="
+            total.value = (parseInt(adult.value) || 0) + (parseInt(child.value) || 0);
+            price.value = ((parseInt(adult.value) || 0) * 12) + ((parseInt(child.value) || 0) * 8);
+        ">
+            
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required autofocus><br>
+            
+            <!-- Added Phone Number Input (Part 2) -->
+            <label for="phone">Phone Number: </label>
+            <input type="tel" id="phone" name="phone" placeholder="012-3456789" required><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="date">Show date: </label>
+            <input type="date" id="date" name="date"><br>
+
+            <!-- Added Show Time Input (Part 2) -->
+            <label for="time">Show time: </label>
+            <input type="time" id="time" name="time"><br>
+            
+            <label for="movie">Movie:</label>
+            <input id="movie" name="movie" list="movies"><br>
+            <datalist id="movies">
+                <option value="Space Rangers">
+                <option value="Kampung Comedy">
+                <option value="Cyber Odyssey">
+            </datalist><br>
+            
+            <label for="adult">Adult tickets (RM 12):</label>
+            <input type="number" id="adult" name="adult" min="0" value="0"><br>
+            
+            <label for="child">Child tickets (RM 8):</label>
+            <input type="number" id="child" name="child" min="0" value="0"><br>
+            
+            <label for="rating">Rate our service: </label>
+            <input type="range" id="rating" name="rating" min="1" max="5" value="3"><br><br>
+            
+            <!-- Output 1: Total Tickets -->
+            <strong>Total tickets: </strong>
+            <output name="total" for="adult child">0</output><br>
+
+            <!-- Output 2: Total Price (Part 2) -->
+            <strong>Total price: RM </strong>
+            <output name="price" for="adult child">0</output><br><br>
+
+            <input type="submit" value="Book Now">
+        </form>
+    </div>
+
+    <!-- Sidebar Section (Part 2: Added Now Showing List) -->
+    <div id="sidebar">
+        <h2>Now Showing</h2>
+        <ul>
+            <li>
+                <strong>Space Rangers</strong> 
+                <span>(PG-13)</span> - 
+                <a href="https://example.com/trailer1">Watch Trailer</a>
+            </li>
+            <li>
+                <strong>Kampung Comedy</strong> 
+                <span>(P13)</span> - 
+                <a href="https://example.com/trailer2">Watch Trailer</a>
+            </li>
+            <li>
+                <strong>Cyber Odyssey</strong> 
+                <span>(18)</span> - 
+                <a href="https://example.com/trailer3">Watch Trailer</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Footer Section (Part 2: Updated text with entities &reg;, &lt;, &amp;, &copy;) -->
+    <div id="footer">
+        <p>&copy; 2026 CineKampus. All rights reserved. | e-Ticket&reg; - Campus Cinema &lt; RM10 every Tuesday &amp; Thursday</p>
+    </div>
+
+</body>
+</html>
