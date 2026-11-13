@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruang Pulang</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        header h1 {
+            text-decoration: underline wavy #f4a261;
+            text-underline-offset: 8px;
+            letter-spacing: 1.5px;
+        }
+
+        .highlight-overline {
+            text-decoration: overline #e76f51 3px;
+            padding-top: 5px;
+        }
+
+        .old-price {
+            text-decoration: line-through #d62828 2px;
+            color: #8d99ae;
+            margin-right: 8px;
+        }
+
+        figure {
+            margin: 20px auto;
+            text-align: center;
+            background-color: #fff8f0;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(107, 62, 38, 0.1);
+        }
+
+        figcaption {
+            margin-top: 12px;
+            font-style: italic;
+            color: #5c3a21;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>WELCOME TO RUANG PULANG</h1>
+        <p>A little space to breathe &mdash; Enjoy life's little moments</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about">Signature Menu</a></li>
+            <li><a href="#media">Our Craft</a></li>
+            <li><a href="#outlets">Outlets & Order</a></li>
+            <li><a href="#register">Rewards Membership</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        
+        <!-- Section & Article -->
+        <section id="about" class="card">
+            <h2 class="highlight-overline">Fresh From The Oven</h2>
+            <article>
+                <h3>Handcrafted Cakes, Pastries & Comfort Food</h3>
+                <p>
+                    At <strong>Ruang Pulang</strong>, every slice of cake, flaky croissant and sourdough loaf 
+                    is freshly baked daily using premium ingredients and our closely guarded house recipes to bring you comfort in every bite.
+                </p>
+                <p>
+                    Hi-Tea Indulgence Box (4 Pastries + 2 Drinks): <span class="old-price">RM 49.90</span> <strong>RM 29.90 Only!</strong>
+                </p>
+            </article>
+        </section>
+
+        <!-- Section Video -->
+        <section id="media" class="card">
+            <h2 class="highlight-overline">Our Signature Croissant</h2>
+            <p>Take a peek at how our pastry chefs glaze and prepare our signature bakes every morning:</p>
+            
+            <figure>
+                <div class="video-wrapper">
+                    <!-- Gantikan 'bakery.mp4' dengan nama fail video dalam folder anda -->
+                    <video controls>
+                        <source src="bakery.mp4" type="video/mp4">
+                        Your browser does not support the HTML5 video tag.
+                    </video>
+                </div>
+                <figcaption>
+                    <strong>Video 1.1:</strong> Morning preparation and fresh glazing of Ruang Pulang's signature croissants.
+                </figcaption>
+            </figure>
+        </section>
+
+        <!-- Additional Section (Outlets & Online Order - menggantikan Baking Guides) -->
+        <section id="outlets" class="card">
+            <h2 class="highlight-overline">Visit Us & Order Online</h2>
+            <p>Craving a sweet escape? Drop by our cafe's or get Ruang Pulang delivered straight to your doorstep:</p>
+            <ul class="resource-links">
+                <li><a href="https://maps.google.com" target="_blank">Ruang Pulang Flagship Cafe's &mdash; Bangsar, Kuala Lumpur (10 AM &ndash; 10 PM)</a></li>
+                <li><a href="https://www.grab.com/my/food/" target="_blank">Order Whole Cakes & Pastries via GrabFood</a></li>
+                <li><a href="https://www.foodpanda.my/" target="_blank">Same-Day Delivery via Foodpanda</a></li>
+            </ul>
+        </section>
+
+        <!-- Interactive Elements (Form) -->
+        <section id="register" class="card">
+            <h2 class="highlight-overline">Ruang Pulang Rewards Club</h2>
+            <p>Sign up as a member to enjoy a free slice of cake on your birthday and exclusive seasonal promos:</p>
+
+            <form action="#" method="post" class="styled-form">
+                <!-- Name -->
+                <div class="form-group">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="e.g. aisyah@email.com" required>
+                </div>
+
+                <!-- Gender -->
+                <div class="form-group">
+                    <label class="group-label">Gender:</label>
+                    <div class="inline-options">
+                        <label><input type="radio" name="gender" value="male" required> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                    </div>
+                </div>
+
+                <!-- Favorite Menu -->
+                <div class="form-group">
+                    <label class="group-label">Your Favorite Treats:</label>
+                    <div class="inline-options">
+                        <label><input type="checkbox" name="favorites" value="cakes"> Signature Cakes</label>
+                        <label><input type="checkbox" name="favorites" value="croissants"> Butter Croissants</label>
+                        <label><input type="checkbox" name="favorites" value="sourdough"> Artisan Sourdough</label>
+                        <label><input type="checkbox" name="favorites" value="coffee"> Specialty Coffee</label>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn-submit">Join Rewards Club</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Ruang Pulang Bakery & Cafe | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,243 @@
+/* Reset & Tetapan Asas */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f4f8;
+    color: #2b2d42;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(135deg, #1d3557, #457b9d);
+    color: #ffffff;
+    text-align: center;
+    padding: 2.5rem 1rem;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Navigation Bar (Unordered List) */
+nav {
+    background-color: #14213d;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px 22px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+/* Interactive Link States untuk Navigation */
+nav ul li a:visited {
+    color: #e0fbfc;
+}
+
+nav ul li a:hover {
+    background-color: #fca311;
+    color: #14213d;
+    text-decoration: underline;
+}
+
+nav ul li a:active {
+    background-color: #e63946;
+    color: #ffffff;
+}
+
+/* Container & Cards */
+.container {
+    max-width: 960px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+    color: #1d3557;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+h3 {
+    color: #457b9d;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+/* Responsive Video */
+.video-wrapper video {
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+    border-radius: 8px;
+    border: 3px solid #1d3557;
+}
+
+/* Interactive Link States untuk Kandungan Utama (:visited, :hover, :active) */
+.resource-links {
+    margin-left: 20px;
+}
+
+.resource-links li {
+    margin-bottom: 10px;
+}
+
+.resource-links a:link {
+    color: #0077b6;
+    text-decoration: underline dotted;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.resource-links a:visited {
+    color: #7209b7;
+}
+
+.resource-links a:hover {
+    color: #d90429;
+    text-decoration: underline solid 2px;
+    background-color: #fff3b0;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.resource-links a:active {
+    color: #ffffff;
+    background-color: #1d3557;
+}
+
+/* Form Styling */
+.styled-form {
+    margin-top: 15px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #1d3557;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus {
+    outline: none;
+    border-color: #457b9d;
+    box-shadow: 0 0 0 3px rgba(69, 123, 157, 0.2);
+}
+
+.inline-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 5px;
+}
+
+.inline-options label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.btn-submit {
+    background-color: #1d3557;
+    color: #ffffff;
+    border: none;
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn-submit:hover {
+    background-color: #fca311;
+    color: #14213d;
+}
+
+.btn-submit:active {
+    transform: scale(0.98);
+}
+
+/* Footer */
+footer {
+    background-color: #1d3557;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 40px;
+}
+
+/* Responsiveness untuk Skrin Mudah Alih (Mobile) */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li a {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .inline-options {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
