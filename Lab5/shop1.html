@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Campus Bookstore</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="shop1.css">
+
+    <style>
+        h1 { text-align: center; }
+    </style>
+</head>
+<body>
+    <!-- 
+    LIST OF IDENTIFIED ERRORS:
+    Error 1 (shop1.html, Line 6): Invalid Google Fonts v2 URL parameter.
+    Error 2 (shop1.html, Line 7): Incorrect rel attribute value 'stylesheets' instead of 'stylesheet'.
+    Error 3 (shop1.html, Lines 10-12): <style> element placed inside <body> instead of <head> (invalid HTML5).
+    Error 4 (shop1.html, Line 18): Invalid inline CSS syntax 'color=#1B4F72;' (uses '=').
+    Error 5 (shop1.html, Line 20): Table id is set to 'product' instead of 'products'.
+    Error 6 (shop1.css, Line 2): Font name misspelled as 'Robotto' instead of 'Roboto'.
+    Error 7 (shop1.css, Line 4): Invalid value 'no repeat' (missing hyphen; should be 'no-repeat').
+    Error 8 (shop1.css, Line 5): Property name misspelled as 'bacground-position' instead of 'background-position'.
+    Error 9 (shop1.css, Lines 12-13): 'background-color: #333;' placed outside the closing brace '}'.
+    Error 10 (shop1.css, Line 18): 'display: inline;' should be 'display: block;'.
+    Error 11 (shop1.css, Lines 20-22): 'padding' and 'text-decoration' placed outside the closing brace '}' of the 'li a' rule.
+    Error 12 (shop1.css, Lines 23-25): Invalid selector 'li:a:hover' (should be 'li a:hover') and 'background-color: #111;' placed outside the closing brace '}'.
+    Error 13 (shop1.css, Line 27): Invalid property value 'collapsed', should be 'collapse'.
+    Error 14 (shop1.css, Lines 31-33): 'border' and 'padding' placed outside the closing brace '}' of '#products td, #products th'.
+    Error 15 (shop1.css, Line 34): Selector 'tr:nth-child(2)' only styles the 2nd row instead of all alternating even rows ('tr:nth-child(even)').
+    Error 16 (shop1.css, Lines 37-39): Invalid pseudo-class ':hovered', should be ':hover' and 'background-color: #ddd;' placed outside the closing brace '}'.
+    Error 17 (shop1.css, Line 45): Missing semicolon ';' after 'background-color: #f1f1f1'.
+    -->
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#books">Books</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <h1 style="color: #1B4F72;">Campus Bookstore</h1>
+    <p>Textbooks, stationery and more for every student.</p>
+
+    <table id="products">
+        <tr><th>Item</th><th>Category</th><th>Price (RM)</th></tr>
+        <tr><td>Web Design Basics</td><td>Textbook</td><td>45.00</td></tr>
+        <tr><td>A4 Notebook</td><td>Stationery</td><td>6.50</td></tr>
+        <tr><td>USB Drive 32GB</td><td>Gadget</td><td>25.00</td></tr>
+        <tr><td>Highlighter Set</td><td>Stationery</td><td>9.90</td></tr>
+    </table>
+
+    <footer>&copy; 2026 Campus Bookstore</footer>
+</body>
+</html>
